@@ -1,3 +1,42 @@
+# PID Controller Project Starter Code
+
+
+<!--more-->
+
+[//]: # (Image References)
+
+[image1]: /build/result.jpg "Sample final score"
+[image2]: /build/result1.jpg "Sample final score"
+
+#### How to run the program
+```sh
+1. mkdir build
+2. cd build
+3. cmake ..
+4. make
+5. ./PID
+6. and run the simulator and select Project 1/2: EKF and UKF
+```
+
+The summary of the files and folders int repo is provided in the table below:
+
+| File/Folder               | Definition                                                                                  |
+| :------------------------ | :------------------------------------------------------------------------------------------ |
+| src/json.hpp              | Various definitions.                                                                        |
+| src/PID.cpp               | Initializes the filter, calls the predict and update function, defines the predict and      |
+| src/PID.h                 | Definition of the package of pid.                                                           |
+| src/main.cpp              | Has several functions within main(), communicates with the Term 2 Simulator receiving data  |
+|                           | measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE |
+|                           | these all handle the uWebsocketIO communication between the simulator and it'sself.         |
+|                           |                                                                                             |
+| src                       | Folder where are all the source files of the project.                                       |
+| build                     | Folder where the project executable has been compiled.                                      |
+|                           |                                                                                             |
+
+
+---
+
+
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
 
