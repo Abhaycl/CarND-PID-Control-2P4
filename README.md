@@ -17,7 +17,7 @@ A PID (Proportional, Integral, Derivative) controller is a control loop feedback
 3. cmake ..
 4. make
 5. ./PID
-6. and run the simulator and select Project 1/2: EKF and UKF
+6. and run the simulator and select Project 1/4: PID Controller
 ```
 
 The summary of the files and folders int repo is provided in the table below:
@@ -40,7 +40,7 @@ The summary of the files and folders int repo is provided in the table below:
 
 # How it was tuned
 
-Generally speaking, it requires to set Kd and Ki to 0 and gradually increase Kp before the car runs with stable and consistent oscillations. This value of Kp and the oscillation period can be used to calculate optimal pid controller parameters by the method. Parameters was able to drive car around the track but with a lot of wobbling, that is why parameters were further tuned manually by try-and-error process.
+Generally speaking, it requires to set Kd and Ki to 0 and gradually increase Kp before the car runs with stable and consistent oscillations. This value of Kp and the oscillation period can be used to calculate optimal pid controller parameters by the method. Parameters was able to drive car around the track but with a lot of wobbling, that is why parameters were further tuned manually after several rounds of trial and error.
 
 The same process was applied for different speed, so different PID parameters were found for different speed. The results were linearized in order to make the parameters automatically tune with the car speed variation.
 
