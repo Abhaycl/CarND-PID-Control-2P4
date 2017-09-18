@@ -44,6 +44,8 @@ Generally speaking, it requires to set Kd and Ki to 0 and gradually increase Kp 
 
 The same process was applied for different speed, so different PID parameters were found for different speed. The results were linearized in order to make the parameters automatically tune with the car speed variation.
 
+While the PID controller is easy to implement, but it is not so easy to tune.
+
 ![Final score][image1]
 
 ---
