@@ -17,7 +17,7 @@ A PID (Proportional, Integral, Derivative) controller is a control loop feedback
 3. cmake ..
 4. make
 5. ./PID
-6. and run the simulator and select Project 1/4: PID Controller
+6. and run the simulator and select Project 4: PID Controller
 ```
 
 The summary of the files and folders int repo is provided in the table below:
