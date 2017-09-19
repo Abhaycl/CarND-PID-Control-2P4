@@ -48,6 +48,8 @@ While the PID controller is easy to implement, but it is not so easy to tune.
 
 ![Final score][image1]
 
+![Final score][image2]
+
 ---
 
 #### Discussion
