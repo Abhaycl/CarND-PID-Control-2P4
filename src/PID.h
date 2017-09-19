@@ -1,5 +1,6 @@
 #ifndef PID_H
 #define PID_H
+#include <vector>
 
 class PID {
 public:
@@ -9,14 +10,24 @@ public:
   double p_error;
   double i_error;
   double d_error;
-
+  
   /*
   * Coefficients
   */ 
   double Kp;
   double Ki;
   double Kd;
-
+  
+  /*
+  * Twiddle variables
+  */
+  std::vector<double> dp;
+  int step, index;
+  // Number of steps to allow changes to settle, then to evaluate error
+  int n_settle_steps, n_eval_steps;
+  double total_error, best_error;
+  bool adding, subtracting, twiddle;
+  
   /*
   * Constructor
   */
@@ -41,6 +52,7 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
 };
 
 #endif /* PID_H */
