@@ -1,0 +1,3 @@
+/mnt/c/2P4/build/CMakeFiles/edit_cache.dir
+/mnt/c/2P4/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/2P4/build/CMakeFiles/pid.dir
